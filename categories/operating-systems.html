@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating Systems - Tech Store</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="../index.html"><img src="../images/logo.png" class="logo" alt=""></a>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li class="has-dropdown">
+                    <a class="active" href="../shop.html">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laptops-pc.html">Laptops & PC</a></li>
+                        <li><a href="mobiles.html">Mobiles</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="software-apps.html">Software & Apps</a></li>
+                        <li><a class="active" href="operating-systems.html">Operating Systems</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="../cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="../cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>#OperatingSystems</h2>
+        <p>Power your devices with the latest OS!</p>
+    </section>
+
+    <section id="category-filter" class="section-p1">
+        <div class="filter-container">
+            <select id="platformFilter">
+                <option value="">All Platforms</option>
+                <option value="windows">Windows</option>
+                <option value="macos">macOS</option>
+                <option value="linux">Linux</option>
+                <option value="chrome">Chrome OS</option>
+                <option value="server">Server OS</option>
+            </select>
+            <select id="editionFilter">
+                <option value="">Edition</option>
+                <option value="home">Home</option>
+                <option value="pro">Professional</option>
+                <option value="enterprise">Enterprise</option>
+                <option value="education">Education</option>
+                <option value="server">Server</option>
+            </select>
+            <select id="licenseFilter">
+                <option value="">License Type</option>
+                <option value="oem">OEM</option>
+                <option value="retail">Retail</option>
+                <option value="volume">Volume</option>
+                <option value="subscription">Subscription</option>
+                <option value="free">Free</option>
+            </select>
+            <select id="sortBy">
+                <option value="">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+                <option value="release">Release Date</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='products/windows-11-pro.html';">
+                <img src="../images/products/os1.jpg" alt="">
+                <div class="des">
+                    <span>Microsoft</span>
+                    <h5>Windows 11 Pro</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$199.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='products/macos-sonoma.html';">
+                <img src="../images/products/os2.jpg" alt="">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5>macOS Sonoma</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$29.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='../products/ubuntu-pro.html';">
+                <img src="../images/products/os3.jpg" alt="">
+                <div class="des">
+                    <span>Canonical</span>
+                    <h5>Ubuntu Pro</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$149.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- OS Features Section -->
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="../images/features/f1.png" alt="">
+            <h6>Easy Install</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../images/features/f2.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../images/features/f3.png" alt="">
+            <h6>Regular Updates</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../images/features/f4.png" alt="">
+            <h6>Security</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../images/features/f5.png" alt="">
+            <h6>Compatibility</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../images/features/f6.png" alt="">
+            <h6>Documentation</h6>
+        </div>
+    </section>
+
+    <!-- OS Categories Banner -->
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Windows OS</h4>
+            <h2>Latest Windows 11</h2>
+            <span>The most advanced Windows yet</span>
+            <button class="white" onclick="filterByPlatform('windows')">Learn More</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Server Solutions</h4>
+            <h2>Enterprise Grade</h2>
+            <span>Powerful server operating systems</span>
+            <button class="white" onclick="filterByEdition('server')">Discover More</button>
+        </div>
+    </section>
+
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>LINUX</h2>
+            <h3>Open Source Freedom</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>macOS</h2>
+            <h3>Seamless Experience</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>CHROME OS</h2>
+            <h3>Cloud-First Computing</h3>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For OS Updates</h4>
+            <p>Get email updates about new OS releases and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Arab Open University, Egypt</p>
+            <p><strong>Phone:</strong> Your Phone Number</p>
+            <p><strong>Hours:</strong> Available for Contact: 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow me</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Me</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Personal Website</a>
+            <a href="#">Student Profile</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, Ziad Adel - Tech Store Project</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  
+</body>
+
+</html>

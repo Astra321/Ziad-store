@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macOS Sonoma - Tech Store</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+                <a href="shop.html">Categories</a>
+                <ul class="dropdown-menu">
+                    <li><a href="categories/laptops-pc.html">Laptops & PC</a></li>
+                    <li><a href="categories/mobiles.html">Mobiles</a></li>
+                    <li><a href="categories/accessories.html">Accessories</a></li>
+                    <li><a href="categories/software-apps.html">Software & Apps</a></li>
+                    <li><a href="categories/operating-systems.html">Operating Systems</a></li>
+                </ul>
+            </li>
+    
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+    </div>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../images/products/os2.jpg" width="100%" id="MainImg" alt="macOS Sonoma">
+            
+            <div class="small-img-group">
+                <!-- Similar image structure -->
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Software / Apple</h6>
+            <h4>macOS Sonoma</h4>
+            <h2>$29.99</h2>
+            <select>
+                <option>Select License Type</option>
+                <option>Single User</option>
+                <option>Family Pack</option>
+            </select>
+            <input type="number" value="1" min="1">
+            <button class="normal" onclick="cart.addItem({
+                id: 'macos-sonoma',
+                name: 'macOS Sonoma',
+                price: 29.99,
+                image: '../images/products/macos.jpg'
+            })">Add to Cart</button>
+        </div>
+    </section>
+    <script src="../src/cart.js"></script>
+    <script src="../src/product-gallery.js"></script>
+    <script src="../script.js"></script>
+    <script src="../src/product-buttons.js"></script>
+</body>
+</html> 

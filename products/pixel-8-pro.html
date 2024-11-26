@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Pixel 8 Pro - Tech Store</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section id="header">
+        <!-- Header content same as other pages -->
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../images/products/phone3.jpg" width="100%" id="MainImg" alt="Google Pixel 8 Pro">
+            
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="../images/products/phone3-1.jpg" width="100%" class="small-img" alt="Obsidian">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/products/phone3-2.jpg" width="100%" class="small-img" alt="Porcelain">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/products/phone3-3.jpg" width="100%" class="small-img" alt="Bay">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/products/phone3-4.jpg" width="100%" class="small-img" alt="Features">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Mobiles / Premium Smartphones</h6>
+            <h4>Google Pixel 8 Pro</h4>
+            <h2>$999.99</h2>
+            
+            <select id="storage">
+                <option>Select Storage</option>
+                <option>128GB - $999.99</option>
+                <option>256GB - $1,059.99</option>
+                <option>512GB - $1,179.99</option>
+            </select>
+
+            <select id="color">
+                <option>Select Color</option>
+                <option>Obsidian</option>
+                <option>Porcelain</option>
+                <option>Bay</option>
+            </select>
+
+            <select id="carrier">
+                <option>Select Carrier</option>
+                <option>Unlocked</option>
+                <option>Google Fi</option>
+                <option>AT&T</option>
+                <option>T-Mobile</option>
+                <option>Verizon</option>
+            </select>
+            
+            <div class="cart-controls">
+                <input type="number" id="quantity" value="1" min="1">
+                <button class="normal" onclick="addToCart('pixel-8-pro')">Add to Cart</button>
+            </div>
+            
+            <h4>Product Details</h4>
+            <span>
+                <strong>Key Features:</strong>
+                <ul>
+                    <li>6.7-inch Super Actua display</li>
+                    <li>Google Tensor G3 chip</li>
+                    <li>Pro Camera System:
+                        <ul>
+                            <li>50MP Main camera</li>
+                            <li>48MP Ultra-wide</li>
+                            <li>48MP Telephoto (5x optical zoom)</li>
+                            <li>10.5MP Selfie camera</li>
+                        </ul>
+                    </li>
+                    <li>Temperature sensor</li>
+                    <li>7 years of OS updates</li>
+                </ul>
+                <br>
+                <strong>AI & Software Features:</strong>
+                <ul>
+                    <li>Magic Editor</li>
+                    <li>Best Take</li>
+                    <li>Audio Magic Eraser</li>
+                    <li>Call Screen</li>
+                    <li>Google Assistant with Bard</li>
+                    <li>Live Translate</li>
+                </ul>
+            </span>
+        </div>
+    </section>
+    <script src="../src/cart.js"></script>
+    <script src="../src/product-gallery.js"></script>
+    <script src="../script.js"></script>
+    <script src="../src/product-buttons.js"></script>
+</body>
+
+</html> 

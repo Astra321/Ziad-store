@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPods Pro (2nd Generation) - Tech Store</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="../images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="../shop.html">Shop</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="../cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="../cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="productdetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../images/products/tech6.jpeg" width="100%" id="MainImg" alt="">
+            <div class="small-image-group">
+                <div class="small-img-col">
+                    <img src="../images/products/tech6.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/products/tech6-2.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/products/tech6-3.jpeg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/products/tech6-4.jpeg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Audio / Apple</h6>
+            <h4>AirPods Pro (2nd Gen)</h4>
+            <h2>$249.99</h2>
+            <select>
+                <option>Select Case Type</option>
+                <option>USB-C Case</option>
+                <option>MagSafe Case</option>
+            </select>
+            <div class="cart-controls">
+                <input type="number" id="quantity" value="1" min="1">
+                <button class="normal" onclick="addToCart('airpods-pro')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Related Audio Products</h2>
+        <p>Premium Audio Collection</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../images/products/tech10.jpeg" alt="">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5><a href="sony-wh1000xm4.html">WH-1000XM4</a></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$349</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../images/products/tech14.jpg" alt="">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5><a href="airpods-max.html">AirPods Max</a></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$549</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../images/products/tech15.jpg" alt="">
+                <div class="des">
+                    <span>Bose</span>
+                    <h5><a href="bose-qc45.html">QuietComfort 45</a></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$329</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../images/products/tech16.jpg" alt="">
+                <div class="des">
+                    <span>Samsung</span>
+                    <h5><a href="galaxy-buds2-pro.html">Galaxy Buds2 Pro</a></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$229</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Arab Open University, Egypt</p>
+            <p><strong>Phone:</strong> Your Phone Number</p>
+            <p><strong>Hours:</strong> Available for Contact: 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow me</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Me</a>
+        </div>
+    
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Personal Website</a>
+            <a href="#">Student Profile</a>
+        </div>
+    
+        <div class="copyright">
+            <p>© 2024, Ziad Adel - Tech Store Project</p>
+        </div>
+    </footer>
+    <script src="../src/cart.js"></script>
+    <script src="../src/product-gallery.js"></script>
+    <script src="../script.js"></script>
+    <script src="../src/product-buttons.js"></script>
+</body>
+
+</html>

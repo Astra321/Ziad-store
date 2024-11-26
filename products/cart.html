@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Tech Store</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="shop.html">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categories/laptops-pc.html">Laptops & PC</a></li>
+                        <li><a href="categories/mobiles.html">Mobiles</a></li>
+                        <li><a href="categories/accessories.html">Accessories</a></li>
+                        <li><a href="categories/software-apps.html">Software & Apps</a></li>
+                        <li><a href="categories/operating-systems.html">Operating Systems</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+    </section>
+
+    <section id="cart-page" class="section-p1">
+        <h2>Your Shopping Cart</h2>
+        
+        <div class="cart-container">
+            <div id="cart-items">
+                <!-- Cart items will be dynamically populated -->
+            </div>
+            
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>Calculated at checkout</span>
+                </div>
+                <div class="cart-buttons">
+                    <button class="normal" onclick="window.location.href='shop.html'">Continue Shopping</button>
+                    <button class="normal" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/cart.js"></script>
+</body>
+
+</html>

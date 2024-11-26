@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dell XPS 15 - Tech Store</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="../index.html"><img src="../images/logo.png" class="logo" alt=""></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="../shop.html">Shop</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="../cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="../cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../images/products/laptop3.jpg" width="100%" id="MainImg" alt="Dell XPS 15">
+            
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="../images/products/laptop3-1.jpg" width="100%" class="small-img" alt="Side view">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/products/laptop3-2.jpg" width="100%" class="small-img" alt="Keyboard view">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/products/laptop3-3.jpg" width="100%" class="small-img" alt="Display view">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/products/laptop3-4.jpg" width="100%" class="small-img" alt="Ports view">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Laptops / Professional</h6>
+            <h4>Dell XPS 15 (2024 Model)</h4>
+            <h2>$1,799.99</h2>
+            
+            <select id="processor">
+                <option>Select Processor</option>
+                <option>Intel Core i7-13700H</option>
+                <option>Intel Core i9-13900H</option>
+            </select>
+
+            <select id="graphics">
+                <option>Select Graphics</option>
+                <option>NVIDIA RTX 3050</option>
+                <option>NVIDIA RTX 3060</option>
+            </select>
+
+            <select id="ram-storage">
+                <option>Select RAM/Storage</option>
+                <option>16GB / 512GB SSD</option>
+                <option>32GB / 1TB SSD</option>
+                <option>64GB / 2TB SSD</option>
+            </select>
+
+            <select id="display">
+                <option>Select Display</option>
+                <option>15.6" FHD+ (1920 x 1200)</option>
+                <option>15.6" OLED 3.5K (3456 x 2160)</option>
+                <option>15.6" UHD+ (3840 x 2400)</option>
+            </select>
+            
+            <div class="cart-controls">
+                <input type="number" id="quantity" value="1" min="1">
+                <button class="normal" onclick="addToCart('dell-xps-15')">Add to Cart</button>
+            </div>
+            
+            <h4>Product Details</h4>
+            <span>
+                <strong>Base Configuration:</strong>
+                <ul>
+                    <li>13th Gen Intel® Core™ i9-13900H (24 MB cache, 14 cores, up to 5.40 GHz)</li>
+                    <li>NVIDIA® GeForce RTX™ 3060, 6 GB GDDR6</li>
+                    <li>16 GB, DDR5, 4800 MHz</li>
+                    <li>512 GB, M.2, PCIe NVMe, SSD</li>
+                    <li>15.6" FHD+ (1920 x 1200) InfinityEdge Non-Touch</li>
+                </ul>
+                <br>
+                <strong>Key Features:</strong>
+                <ul>
+                    <li>CNC machined aluminum chassis</li>
+                    <li>Carbon fiber composite palm rest</li>
+                    <li>Edge-to-edge Corning® Gorilla® Glass 6</li>
+                    <li>Quad-speaker design (2.5W x2 woofers, 1.5W x2 tweeters)</li>
+                    <li>Dual-array microphones</li>
+                    <li>Windows 11 Pro</li>
+                    <li>Killer™ Wi-Fi 6 AX1650 (2x2)</li>
+                </ul>
+                <br>
+                <strong>Ports:</strong>
+                <ul>
+                    <li>2x Thunderbolt™ 4 (USB Type-C™)</li>
+                    <li>1x USB 3.2 Gen 2 Type-C</li>
+                    <li>1x SD card reader v6.0</li>
+                    <li>1x 3.5mm headphone/microphone jack</li>
+                </ul>
+                <br>
+                <strong>Battery:</strong> 86WHr battery with ExpressCharge™
+            </span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Similar Products</h2>
+        <p>Other Premium Laptops You Might Like</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='macbook-pro-16.html';">
+                <img src="../images/products/laptop2.jpg" alt="">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5>MacBook Pro 16</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$2,499.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='rog-strix-g15.html';">
+                <img src="../images/products/laptop1.jpg" alt="">
+                <div class="des">
+                    <span>ASUS</span>
+                    <h5>ROG Strix G15</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1,999.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <!-- Footer content same as other pages -->
+    </footer>
+    <script src="../src/cart.js"></script>
+    <script src="../src/product-gallery.js"></script>
+    <script src="../script.js"></script>
+    <script src="../src/product-buttons.js"></script>
+</body>
+
+</html> 

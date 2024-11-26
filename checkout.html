@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Tech Store</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="shop.html">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categories/laptops-pc.html">Laptops & PC</a></li>
+                        <li><a href="categories/mobiles.html">Mobiles</a></li>
+                        <li><a href="categories/accessories.html">Accessories</a></li>
+                        <li><a href="categories/software-apps.html">Software & Apps</a></li>
+                        <li><a href="categories/operating-systems.html">Operating Systems</a></li>
+                    </ul>
+                </li>
+        
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="checkout" class="section-p1">
+        <h2>Checkout</h2>
+        <div class="checkout-container">
+            <div class="checkout-form">
+                <h3>Shipping Information</h3>
+                <form id="shipping-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zipCode">ZIP Code</label>
+                            <input type="text" id="zipCode" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" required>
+                            <option value="">Select Country</option>
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="CA">Canada</option>
+                            <!-- Add more countries as needed -->
+                        </select>
+                    </div>
+
+                    <h3>Payment Information</h3>
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expDate">Expiration Date</label>
+                            <input type="text" id="expDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div id="checkout-items">
+                    <!-- Items will be populated by JavaScript -->
+                </div>
+                <div class="checkout-totals">
+                    <div class="subtotal">
+                        <span>Subtotal:</span>
+                        <span id="checkout-subtotal">$0.00</span>
+                    </div>
+                    <div class="shipping">
+                        <span>Shipping:</span>
+                        <span id="checkout-shipping">$0.00</span>
+                    </div>
+                    <div class="total">
+                        <span>Total:</span>
+                        <span id="checkout-total">$0.00</span>
+                    </div>
+                </div>
+                <button class="normal" onclick="processCheckout()">Place Order</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <!-- Your existing footer content -->
+    </footer>
+
+    <script src="src/cart.js"></script>
+    <script src="src/checkout.js"></script>
+</body>
+</html> 

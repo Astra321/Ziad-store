@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Pro - Tech Store</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Header section same as other pages -->
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../images/products/os3.jpg" width="100%" id="MainImg" alt="Ubuntu Pro">
+            
+            <div class="small-img-group">
+                <!-- Similar image structure -->
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Operating Systems / Linux</h6>
+            <h4>Ubuntu Pro</h4>
+            <h2>$149.99</h2>
+            
+            <select>
+                <option>Select Subscription Type</option>
+                <option>1 Year Subscription</option>
+                <option>3 Year Subscription</option>
+                <option>5 Year Subscription</option>
+            </select>
+            
+            <input type="number" value="1" min="1">
+            
+            <button class="normal" onclick="addToCart('ubuntu-pro')">Add to Cart</button>
+            
+            <h4>Product Details</h4>
+            <span>
+                <strong>Key Features:</strong>
+                <ul>
+                    <li>10-year security maintenance</li>
+                    <li>Kernel Livepatch</li>
+                    <li>Advanced security features</li>
+                    <li>Compliance management</li>
+                    <li>24/7 enterprise support</li>
+                    <li>FIPS 140-2 certification</li>
+                    <li>Active Directory integration</li>
+                </ul>
+                <br>
+                <strong>System Requirements:</strong>
+                <ul>
+                    <li>2 GHz dual-core processor</li>
+                    <li>4 GB RAM (8 GB recommended)</li>
+                    <li>25 GB storage</li>
+                    <li>Graphics capable of 1024×768</li>
+                    <li>Internet connection for updates</li>
+                </ul>
+            </span>
+        </div>
+    </section>
+
+    <script src="../src/product-gallery.js"></script>
+    <script src="../src/cart.js"></script>
+    <script src="../script.js"></script>
+    <script src="../src/product-buttons.js"></script>
+</body>
+</html> 

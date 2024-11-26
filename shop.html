@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce website</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>#stayhome</h2>
+        <p>Save more with coupons & up to 70% off!</p>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Mobiles, Tablets & Wearables</h2>
+        <p>Latest Premium Mobile Devices</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='products/iphone-15-pro-max.html';">
+                <img src="images/products/phone1.jpg" alt="">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5>iPhone 15 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1,199.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='products/samsung-s24-ultra.html';">
+                <img src="images/products/phone2.jpg" alt="">
+                <div class="des">
+                    <span>Samsung</span>
+                    <h5>Galaxy S24 Ultra</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1,299.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+
+        <h2>PCs & Gaming Hardware</h2>
+        <p>High-Performance Computing & Gaming</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='products/macbook-pro-16.html';">
+                <img src="images/products/laptop2.jpg" alt="">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5>MacBook Pro 16</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$2,499.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='products/rog-strix-g15.html';">
+                <img src="images/products/laptop1.jpg" alt="">
+                <div class="des">
+                    <span>ASUS</span>
+                    <h5>ROG Strix G15</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1,999.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+
+        <h2>Accessories / Audio & Peripherals</h2>
+        <p>Premium Audio & Tech Accessories</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='products/sony-wh-1000xm5.html';">
+                <img src="images/products/acc1.jpg" alt="">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WH-1000XM5</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$399.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='products/echo-dot.html';">
+                <img src="images/products/acc3.jpg" alt="">
+                <div class="des">
+                    <span>Amazon</span>
+                    <h5>Echo Dot (5th Gen)</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$49.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+
+        <h2>Operating Systems</h2>
+        <p>Professional & Home Operating Systems</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='products/windows-11-pro.html';">
+                <img src="images/products/os1.jpg" alt="">
+                <div class="des">
+                    <span>Microsoft</span>
+                    <h5>Windows 11 Pro</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$199.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='products/macos-sonoma.html';">
+                <img src="images/products/os2.jpg" alt="">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5>macOS Sonoma</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$29.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='products/ubuntu-pro.html';">
+                <img src="images/products/os3.jpg" alt="">
+                <div class="des">
+                    <span>Canonical</span>
+                    <h5>Ubuntu Pro</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$149.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Arab Open University, Egypt</p>
+            <p><strong>Phone:</strong> Your Phone Number</p>
+            <p><strong>Hours:</strong> Available for Contact: 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow me</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Me</a>
+        </div>
+    
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Personal Website</a>
+            <a href="#">Student Profile</a>
+        </div>
+    
+        <div class="copyright">
+            <p>© 2024, Ziad Adel - Tech Store Project</p>
+        </div>
+    </footer>
+
+    <!-- javascript script file link -->
+    <script src="script.js"></script>
+</body>
+
+</html>

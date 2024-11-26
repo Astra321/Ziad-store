@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store - Your Premium Technology Destination</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProducts()">
+                <i class="fas fa-search"></i>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="shop.html">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categories/laptops-pc.html">Laptops & PC</a></li>
+                        <li><a href="categories/mobiles.html">Mobiles</a></li>
+                        <li><a href="categories/accessories.html">Accessories</a></li>
+                        <li><a href="categories/software-apps.html">Software & Apps</a></li>
+                        <li><a href="categories/operating-systems.html">Operating Systems</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Trade-in Offers</h4>
+        <h2>Next-Gen Tech Deals</h2>
+        <h1>On All Products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button onclick="window.location.href='shop.html'">Shop Now</button>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="images/features/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f2.png" alt="">
+            <h6>Tech Support</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f3.png" alt="">
+            <h6>Save & Trade</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f5.png" alt="">
+            <h6>Expert Setup</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f6.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Latest Tech Collection</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="images/products/tech1.jpg" alt="">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5><a href="products/iphone-14-pro-max.html">iPhone 14 Pro Max</a></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1099</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="images/products/tech2.jpg" alt="">
+                <div class="des">
+                    <span>Samsung</span>
+                    <h5><a href="products/galaxy-s23-ultra.html">Galaxy S23 Ultra</a></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1199</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="images/products/tech4.jpg" alt="">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5><a href="products/ipad-pro.html">iPad Pro</a></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1099</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="images/products/tech5.jpg" alt="">
+                <div class="des">
+                    <span>ASUS</span>
+                    <h5><a href="products/rog-gaming-laptop.html">ROG Gaming Laptop</a></h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1999</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Tech Upgrade Deals</h4>
+        <h2>Up to <span>70% Off</span> - All Latest Gadgets & Accessories</h2>
+        <button class="normal" onclick="window.location.href='shop.html'">Explore More</button>
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Gaming Zone</h4>
+            <h2>Latest Gaming Gear</h2>
+            <span>Premium gaming equipment for the ultimate experience</span>
+            <button class="white" onclick="window.location.href='shop.html#gaming'">Learn More</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Smart Home</h4>
+            <h2>Connected Living</h2>
+            <span>Transform your home with smart technology</span>
+            <button class="white" onclick="window.location.href='shop.html#smart-home'">Collection</button>
+        </div>
+    </section>
+
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>MOBILE DEVICES</h2>
+            <h3>Latest Smartphones & Tablets</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>AUDIO GEAR</h2>
+            <h3>Premium Sound Experience</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>PC COMPONENTS</h2>
+            <h3>Build Your Dream Setup</h3>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Tech Updates</h4>
+            <p>Get email updates about latest tech releases and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Arab Open University, Egypt</p>
+            <p><strong>Phone:</strong> Your Phone Number</p>
+            <p><strong>Hours:</strong> Available for Contact: 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow me</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Me</a>
+        </div>
+    
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Personal Website</a>
+            <a href="#">Student Profile</a>
+        </div>
+    
+        <div class="copyright">
+            <p>© 2024, Ziad Adel - Tech Store Project</p>
+        </div>
+    </footer>
+
+    <!-- javascript script file link -->
+    <script src="script.js"></script>
+</body>
+</html>

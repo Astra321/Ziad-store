@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phones - Tech Store</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="../index.html"><img src="../images/logo.png" class="logo" alt=""></a>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li class="has-dropdown">
+                    <a class="active" href="../shop.html">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laptops-pc.html">Laptops & PC</a></li>
+                        <li><a class="active" href="mobiles.html">Mobiles</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="software-apps.html">Software & Apps</a></li>
+                        <li><a href="operating-systems.html">Operating Systems</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="../cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="../cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>#Mobiles</h2>
+        <p>Discover the latest smartphones!</p>
+    </section>
+
+    <section id="category-filter" class="section-p1">
+        <div class="filter-container">
+            <select id="brandFilter">
+                <option value="">All Brands</option>
+                <option value="apple">Apple</option>
+                <option value="samsung">Samsung</option>
+                <option value="google">Google</option>
+                <option value="oneplus">OnePlus</option>
+                <option value="xiaomi">Xiaomi</option>
+                <option value="huawei">Huawei</option>
+            </select>
+            <select id="priceFilter">
+                <option value="">Price Range</option>
+                <option value="0-300">Under $300</option>
+                <option value="300-600">$300 - $600</option>
+                <option value="600-1000">$600 - $1000</option>
+                <option value="1000+">Over $1000</option>
+            </select>
+            <select id="featureFilter">
+                <option value="">Features</option>
+                <option value="5g">5G</option>
+                <option value="wireless-charging">Wireless Charging</option>
+                <option value="dual-sim">Dual SIM</option>
+                <option value="face-id">Face ID</option>
+            </select>
+            <select id="sortBy">
+                <option value="">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+                <option value="newest">Newest First</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='../products/iphone-15-pro-max.html';">
+                <img src="../images/products/phone1.jpg" alt="">
+                <div class="des">
+                    <span>Apple</span>
+                    <h5>iPhone 15 Pro Max</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1,199.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='../products/samsung-s24-ultra.html';">
+                <img src="../images/products/tech3-2.jpg" alt="">
+                <div class="des">
+                    <span>Samsung</span>
+                    <h5>Galaxy S24 Ultra</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$1,299.99</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Tech Updates</h4>
+            <p>Get email updates about latest mobile releases and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Arab Open University, Egypt</p>
+            <p><strong>Phone:</strong> Your Phone Number</p>
+            <p><strong>Hours:</strong> Available for Contact: 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow me</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Me</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Personal Website</a>
+            <a href="#">Student Profile</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, Ziad Adel - Tech Store Project</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const categoryProducts = products.filter(p => p.category === 'mobiles');
+            displayCategoryProducts(categoryProducts);
+            setupFilters();
+        });
+
+        // Additional mobile-specific filtering logic
+        function applyFeatureFilter(products) {
+            const featureFilter = document.getElementById('featureFilter').value;
+            if (featureFilter) {
+                return products.filter(p => p.features && p.features.includes(featureFilter));
+            }
+            return products;
+        }
+
+        function displayCategoryProducts(products) {
+            const container = document.getElementById('categoryProducts');
+            container.innerHTML = ''; // Clear existing content
+
+            if (products.length === 0) {
+                container.innerHTML = '<p>No products found.</p>'; // Message for no products
+                return;
+            }
+
+            products.forEach(product => {
+                const productHTML = `
+                    <div class="pro">
+                        <img src="${product.image}" alt="${product.name}">
+                        <div class="des">
+                            <span>${product.category}</span>
+                            <h5>${product.name}</h5>
+                            <div class="price">$${product.price.toFixed(2)}</div>
+                            <button onclick="addToCart({ id: '${product.id}', name: '${product.name}', price: ${product.price}, image: '${product.image}' })">Add to Cart</button>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += productHTML; // Append product HTML
+            });
+        }
+    </script>
+</body>
+
+</html> 

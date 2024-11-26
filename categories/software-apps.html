@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software & Apps - Tech Store</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="../index.html"><img src="../images/logo.png" class="logo" alt=""></a>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search software and apps...">
+            <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li class="has-dropdown">
+                    <a class="active" href="../shop.html">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laptops-pc.html">Laptops & PC</a></li>
+                        <li><a href="mobiles.html">Mobiles</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a class="active" href="software-apps.html">Software & Apps</a></li>
+                        <li><a href="operating-systems.html">Operating Systems</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="../cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="../cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>#Software&Apps</h2>
+        <p>Digital solutions for every need!</p>
+    </section>
+
+    <section id="category-filter" class="section-p1">
+        <div class="filter-container">
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="productivity">Productivity</option>
+                <option value="security">Security & Antivirus</option>
+                <option value="design">Design & Creative</option>
+                <option value="development">Development Tools</option>
+                <option value="business">Business & Office</option>
+                <option value="education">Education</option>
+                <option value="gaming">Gaming</option>
+                <option value="utilities">Utilities</option>
+            </select>
+            <select id="platformFilter">
+                <option value="">Platform</option>
+                <option value="windows">Windows</option>
+                <option value="mac">macOS</option>
+                <option value="linux">Linux</option>
+                <option value="ios">iOS</option>
+                <option value="android">Android</option>
+                <option value="web">Web-Based</option>
+            </select>
+            <select id="licenseFilter">
+                <option value="">License Type</option>
+                <option value="subscription">Subscription</option>
+                <option value="lifetime">Lifetime</option>
+                <option value="free">Free</option>
+                <option value="trial">Free Trial Available</option>
+            </select>
+            <select id="sortBy">
+                <option value="">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+                <option value="popular">Most Popular</option>
+                <option value="newest">Newest First</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container" id="categoryProducts">
+            <div class="pro">
+                <img src="../images/products/os2.jpg" alt="macOS Sonoma">
+                <div class="des">
+                    <span>Software</span>
+                    <h5>macOS Sonoma</h5>
+                    <div class="price">$29.99</div>
+                    <button onclick="addToCart({ id: 'macos-sonoma', name: 'macOS Sonoma', price: 29.99, image: '../images/products/os2.jpg' })">Add to Cart</button>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="../images/products/adobe-creative-suite.jpg" alt="Adobe Creative Suite">
+                <div class="des">
+                    <span>Software</span>
+                    <h5>Adobe Creative Suite</h5>
+                    <div class="price">$599.00</div>
+                    <button onclick="addToCart({ id: 'adobe-creative-suite', name: 'Adobe Creative Suite', price: 599.00, image: '../images/products/adobe-creative-suite.jpg' })">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <!-- Featured Software Categories -->
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Professional Tools</h4>
+            <h2>Creative Suite</h2>
+            <span>Design, edit, and create with professional tools</span>
+            <button class="white" onclick="filterByCategory('design')">Explore Now</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Security First</h4>
+            <h2>Protection Suite</h2>
+            <span>Keep your devices safe and secure</span>
+            <button class="white" onclick="filterByCategory('security')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>PRODUCTIVITY</h2>
+            <h3>Work Smarter</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>DEVELOPMENT</h2>
+            <h3>Code Better</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2>EDUCATION</h2>
+            <h3>Learn More</h3>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Software Updates</h4>
+            <p>Get email updates about new releases and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Arab Open University, Egypt</p>
+            <p><strong>Phone:</strong> Your Phone Number</p>
+            <p><strong>Hours:</strong> Available for Contact: 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow me</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Me</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Personal Website</a>
+            <a href="#">Student Profile</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, Ziad Adel - Tech Store Project</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const categoryProducts = products.filter(p => p.category === 'software');
+            displayCategoryProducts(categoryProducts);
+            setupFilters();
+        });
+
+        function filterByCategory(category) {
+            const categoryProducts = products.filter(p => 
+                p.category === 'software' && 
+                p.softwareCategory === category
+            );
+            displayCategoryProducts(categoryProducts);
+            document.getElementById('categoryFilter').value = category;
+        }
+
+        // Software-specific filtering logic
+        function applyFilters() {
+            let filteredProducts = products.filter(p => p.category === 'software');
+            
+            const categoryFilter = document.getElementById('categoryFilter').value;
+            const platformFilter = document.getElementById('platformFilter').value;
+            const licenseFilter = document.getElementById('licenseFilter').value;
+
+            if (categoryFilter) {
+                filteredProducts = filteredProducts.filter(p => 
+                    p.softwareCategory === categoryFilter
+                );
+            }
+
+            if (platformFilter) {
+                filteredProducts = filteredProducts.filter(p => 
+                    p.platforms && p.platforms.includes(platformFilter)
+                );
+            }
+
+            if (licenseFilter) {
+                filteredProducts = filteredProducts.filter(p => 
+                    p.licenseType === licenseFilter
+                );
+            }
+
+            const sortValue = document.getElementById('sortBy').value;
+            switch(sortValue) {
+                case 'price-low':
+                    filteredProducts.sort((a, b) => a.price - b.price);
+                    break;
+                case 'price-high':
+                    filteredProducts.sort((a, b) => b.price - a.price);
+                    break;
+                case 'name':
+                    filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
+                    break;
+                case 'popular':
+                    filteredProducts.sort((a, b) => b.popularity - a.popularity);
+                    break;
+                case 'newest':
+                    filteredProducts.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
+                    break;
+            }
+
+            displayCategoryProducts(filteredProducts);
+        }
+    </script>
+</body>
+
+</html> 
